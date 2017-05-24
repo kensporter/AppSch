@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Appointment Scheduler</title>
+  </head>
+  <body>
+    <nav class="page-nav">
+      <div class="container">
+        <a href="appointment.html">Schedule</a>
+        <a href="register.htm" class="active">Register</a>
+      </div>
+    </nav>
+    <h3> Appointment Scheduling Entry </h3>
+    <h> If the patient data exists in SQL Server, then 			retrieve it. </h>
+    <h> If the appointment data exists in SQL Server, 			then retrieve that as well to be edited. </h>
+    <section class="page-section register">
+      <div class="container">
+        <form method="post" action="" id="registration-form">
+          <div class="field">
+            <label for="medical-record-number">MRN:</label>
+            <input type="number" name="MRN" requiired="required"/>
+          </div>
+          <div class="field">
+            <label for="last-name">Last name:</label>
+            <input type="text" name="LastName" required="required"/>
+          </div>
+          <div class="field">
+            <label for="first-name">First name:</label>
+            <input type="text" name="FirstName"  required="required"/>
+          </div>
+          <div class="field">
+            <label for="appointment-date">Appointment Date</label>
+            <input type="date" name="Date" required="required"/>
+           </div>
+            <div class="field"
+              <label for="appointment-time">Appointment Time</label>
+              <input type="time" name="Time" required="required"/>
+            </div>
+            <div class="field">
+              <label for="provider-name">Provider Name</label>
+                <input type="text" name="Provider" required="required"/>
+            </div>
+            <div class="field">
+              <label for="location">Location</label>
+               <input type="text" name="Location" required="required"/>
+            </div>
+          <input type="submit" value="Send" />
+
+          <input type="button" value="Close this window" onclick="self.close()"/>
+        </form>
+        </div>
+          </section>
+          </body>
+</html>
+
