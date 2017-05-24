@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Demo Registration form</title>
+    </head>
+    <body>
+      <nav class="page-nav">
+        <div class="container">
+          <a href="appointment.html">Schedule</a>
+          <a href="register.htm" class="active">Register</a>
+        </div>
+      </nav>
+
+      <header class="page-header">
+            <div class="container">
+                <h1>Demo Registration Form</h1>
+            </div>
+        </header>
+        
+        <section class="page-section register">
+            <div class="container">
+               <form method="post" action="" id="registration-form">
+
+    <div class="field">
+      <label for="medical-record-number">MRN:</label>
+      <input type="number" name="MRN" />
+    </div>
+ 		<div class="field">
+      <label for="last-name">Last name:</label>
+      <input type="text" name="LastName" required="required"/>
+		</div> 
+		<div class="field">
+      <label for="first-name">First name:</label>
+      <input type="text" name="FirstName"  required="required"/>
+		</div> 
+		<div class="field">
+      <label for="date-of-birth">Date of Birth:</label>
+		  <input type="date" name="DOB"  required="required"/> 
+		</div> 
+		<div class="field">
+      <label for="address-line-1">Address Line 1:</label>
+      <input type="text" name="ADRLN1"  required="required"/> 
+		</div> 
+		<div class="field">
+      <label for="address-line-2">Address Line 2:</label>
+      <input type="text" name="ADRLN2" />
+		</div> 
+		<div class="field">
+      <label for="city">City:</label>
+      <input type="text" name="City"  required="required"/>
+		</div>
+		<div class="field">
+      <label for="state">State:</label>
+      <input type="text" name="State"  required="required"/> 
+		</div>
+		<div class="field">
+      <label for="zip-code">Zip Code:</label>
+      <input type="number" name="Zip"  required="required"/>
+		</div> 
+                    <div>
+                        <button type="submit">Register</button>
+                    </div>
+                  <div>
+                    <input type="button" value="Close this window" onclick="self.close()"/>
+                  </div>
+                  </form>
+
+            </div>
+        </section>
+
+        
+        <script src="register.js" type="text/javascript"></script>
+    </body>
+</html>
